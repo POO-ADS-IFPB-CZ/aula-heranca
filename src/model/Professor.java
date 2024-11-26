@@ -12,15 +12,13 @@ public class Professor extends Funcionario{
 
     @Override
     public float getSalario(){
-        float salario = 0;
         switch (formacao){
             case Formacao.ESPECIALIZACAO ->
-                salario = super.getSalario()+500;
+                salario += 500;
             case Formacao.MESTRADO ->
-                salario = super.getSalario()+1000;
+                salario += 1000;
             case Formacao.DOUTORADO ->
-                salario = super.getSalario()+2000;
-            default -> salario = super.getSalario();
+                salario += 2000;
         }
         return salario;
 
