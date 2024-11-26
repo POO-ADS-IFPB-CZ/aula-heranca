@@ -18,4 +18,10 @@ public class TecnicoAdministrativo extends Funcionario{
     public void setSetor(String setor) {
         this.setor = setor;
     }
+
+    @Override
+    public float getSalario(){
+        return salario;
+    }
+
 }
